@@ -9,7 +9,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-const serverAddr = "127.0.0.1:8000"
+const serverAddr = ":8000"
 
 func createServer(router http.Handler, addr string, timeout time.Duration) *http.Server {
 	return &http.Server{
